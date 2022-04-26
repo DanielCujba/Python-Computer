@@ -5,7 +5,7 @@ def bool_to_int(a):
         x=0
         for i in range(15,0,-1):
             x+=int(a[i])*(2**(15-i))
-        if a[0]==True:
+        if a[0]=="1":
             x=x-32768
         return x
 
