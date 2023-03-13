@@ -13,6 +13,7 @@ class ROM32K:
         for i in range(16):
             self.out[i].out=instuction[i]
     def loadROM(self,file_path):
+        self.memory.clear()
         f=open(file_path,"r")
         for _ in range(32768):
             line=f.readline()
